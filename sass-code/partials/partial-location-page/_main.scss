@@ -1,0 +1,47 @@
+$width-content : 90%;
+$padding : 20px;
+$margin : 20px;
+$border-radius : 20px;
+$border : 1px solid black;
+
+.container{
+    width: $width-content;
+    margin: auto;
+    padding: $padding;
+    .brief{
+        border-bottom: $border;
+        border-top: $border;
+        padding: $padding 0;
+        margin-bottom: $margin;
+        .brief-component{
+            margin: 10px 0;
+        }
+    }
+    .location-list-cards{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows: minmax(250px,auto);
+        gap: 10px;
+        margin-top: $margin;
+        .location-list-card{
+            border-bottom: $border;
+            .location-list-card-component{
+                padding: 5px;
+                margin: 10px;
+                text-align: center;
+            }
+            .location-list-card-photo{
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: $border;
+                border-radius: $border-radius;
+            }
+            .location-list-card-button{
+                display: block;
+                margin: 10px auto;
+            }
+        }
+    }
+}

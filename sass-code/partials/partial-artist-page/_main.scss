@@ -1,0 +1,38 @@
+$width-content : 90%;
+$border-adjustment : 1px solid black; 
+$padding : 20px;
+$margin : 30px;
+$photo-background : rgb(220, 220, 220);
+.container{
+    width: $width-content;
+    margin: auto;
+    padding: $padding;
+
+    .artist-section{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(250px,auto);
+        margin-top: $margin;
+        .artist-card{
+            border-bottom: $border-adjustment;
+
+            .artist-section-description{
+                padding: 10px 5px;
+                text-align: center;
+            }
+            .artist-photo{
+                border: $border-adjustment;
+                border-radius: 10px;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .button-artist-section-description{
+                display: block;
+                margin: 10px auto;
+            }
+        }
+    }
+}
